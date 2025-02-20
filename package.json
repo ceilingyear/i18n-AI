@@ -3,7 +3,7 @@
   "displayName": "i18n-AI",
   "publisher": "nijiahong",
   "description": "Use AI to auto translate your language files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.10.5"
   },
@@ -30,7 +30,7 @@
         },
         "i18n-ai.translateLang": {
           "type": "object",
-          "default": "",
+          "default": {},
           "description": "to:翻译输出文件绝对路径;例如：台湾:/Users/mac/Desktop/vite/lang/zh_TW.js,"
         }
       }
