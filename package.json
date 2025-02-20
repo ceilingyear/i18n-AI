@@ -3,9 +3,9 @@
   "displayName": "i18n-AI",
   "publisher": "nijiahong",
   "description": "Use AI to auto translate your language files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.97.0"
+    "vscode": "^1.10.5"
   },
   "icon": "icon.png",
   "categories": [
@@ -50,7 +50,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "^20.17.19",
-    "@types/vscode": "^1.97.0",
+    "@types/vscode": "^1.10.5",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
     "@vscode/test-cli": "^0.0.10",

@@ -85,8 +85,8 @@ export function activate(context: vscode.ExtensionContext) {
 				vscode.window.showInformationMessage('翻译完成');
 				fs.writeFileSync(basePath, '',)
 			} catch (error) {
-				progress.report({ increment: 100 })
 				vscode.window.showErrorMessage('翻译失败：'+error);
+				progress.report({ increment: 100 })
 			}
 		})
 	});
