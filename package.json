@@ -1,0 +1,67 @@
+{
+  "name": "i18n-ai",
+  "displayName": "i18n-AI",
+  "publisher": "nijiahong",
+  "description": "Use AI to auto translate your language files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "i18n-ai.translate",
+        "title": "AI to translate"
+      }
+    ],
+    "configuration": {
+      "title": "i18n-ai配置",
+      "properties": {
+        "i18n-ai.baseLangPath": {
+          "type": "string",
+          "default": "",
+          "description": "from:需要翻译的语言文件绝对路径"
+        },
+        "i18n-ai.translateLang": {
+          "type": "object",
+          "default": "",
+          "description": "to:翻译输出文件绝对路径;例如：台湾:/Users/mac/Desktop/vite/lang/zh_TW.js,"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.17.19",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "openai": "^4.85.2"
+  }
+}
