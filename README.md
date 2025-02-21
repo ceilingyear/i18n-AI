@@ -2,7 +2,7 @@
 
 ## 中文说明
 ### 简介
-欢迎使用 vscode i18n - AI 插件，本插件可以自动翻译指定语言并写入目标文件中，主要用于 JavaScript 国际化一键翻译，节省开发流程。\n
+欢迎使用 vscode i18n - AI 插件，本插件可以自动翻译指定语言并写入目标文件中，主要用于 JavaScript 国际化一键翻译，节省开发流程。
 install:https://marketplace.visualstudio.com/items?itemName=nijiahong.i18n-ai
 
 ### 前置条件
